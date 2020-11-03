@@ -3,6 +3,7 @@ import './App.css';
 import {Input,Button} from 'antd';
 import {Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
+import Logo from './Logo-MN.png';
 
 function ScreenHome(props) {
 
@@ -75,7 +76,7 @@ function ScreenHome(props) {
     <div className="background-Login">
 
             <div className="LogoBanner">
-              <img src='../public/images/Logo-MN.png' alt='logo' style={{margin:"15px"}}/>
+              <img src={Logo} alt='logo' style={{margin:"15px"}}/>
             </div>
 
       <div className="Login-page" >
