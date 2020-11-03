@@ -75,7 +75,7 @@ function ScreenHome(props) {
     <div className="background-Login">
 
             <div className="LogoBanner">
-              <img src='/images/logo-MN.png' alt='logo' style={{margin:"15px"}}/>
+              <img src='../public/images/Logo-MN.png' alt='logo' style={{margin:"15px"}}/>
             </div>
 
       <div className="Login-page" >
