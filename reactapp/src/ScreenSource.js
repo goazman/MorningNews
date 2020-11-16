@@ -26,7 +26,6 @@ function ScreenSource(props) {
     const APIResultsLoading = async() => {
       var langue = 'fr';
       var country = 'fr';
-        
       if(selectedLang === 'en'){
         var langue = 'en';
         var country = 'us';
@@ -34,9 +33,10 @@ function ScreenSource(props) {
       props.changeLang(selectedLang)
       const data = await fetch(`https://newsapi.org/v2/sources?language=${langue}&country=${country}&apiKey=1d0a00b0ad2944aabb853c2267cfb50c`)
       const body = await data.json()
-      setSourceList(body.sources)
+      setSourceList(body.sources);
+      console.log(body.sources);
     }
-
+    
     APIResultsLoading()
   }, [selectedLang])
 
